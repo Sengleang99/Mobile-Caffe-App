@@ -1,6 +1,7 @@
 import 'package:cafe_app/components/button_nav_bar.dart';
-import 'package:cafe_app/components/cart_screen.dart';
-import 'package:cafe_app/components/shop_screen.dart';
+import 'package:cafe_app/screens/cart_screen.dart';
+import 'package:cafe_app/screens/shop_screen.dart';
+import 'package:cafe_app/screens/user_screen.dart';
 import 'package:cafe_app/const.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen>{
   final List<Widget> _screens = [
     const ShopScreen(),
     const CartScreen(),
+    const UserScreen()
   ];
 
   @override

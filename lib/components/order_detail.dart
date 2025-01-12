@@ -1,4 +1,6 @@
+import 'package:cafe_app/models/coffee_shop.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../models/coffee.dart';
 
 class OrderDetail extends StatefulWidget {
@@ -13,6 +15,26 @@ class OrderDetail extends StatefulWidget {
 class _OrderDetailState extends State<OrderDetail> {
   int quantity = 1;
   String selectedSize = "S";
+
+  void addToCart(Coffee coffee) {
+    Provider.of<CoffeeShop>(context, listen: false).addItemToCart(coffee);
+
+    showDialog(
+      context: context,
+      builder: (context) => const AlertDialog(
+        title: Text(
+          'Add to cart successfully!!',
+          style: TextStyle(fontSize: 20),
+        ),
+      ),
+    ).then((_) {
+      Future.delayed(const Duration(seconds: 1), () {
+        Navigator.pop(context); // Close the dialog after 1 second
+      });
+    });
+  }
+
+
 
   void payNow() {
     print("Pay Now clicked with quantity: $quantity, size: $selectedSize, and coffee: ${widget.coffee.name}");

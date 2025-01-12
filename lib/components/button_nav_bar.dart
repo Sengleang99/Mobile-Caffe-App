@@ -13,11 +13,11 @@ class ButtonNavBar extends StatelessWidget{
         onTabChange: (value) => onTabChange!(value),
           color: Colors.grey[600],
           mainAxisAlignment: MainAxisAlignment.center,
-          activeColor: Colors.grey[700],
-          tabBackgroundColor: Colors.grey.shade300,
+          activeColor: Colors.brown,
+          tabBackgroundColor: Colors.brown.shade100,
           tabBorderRadius: 24,
           tabActiveBorder: Border.all(color: Colors.white),
-          tabs: [
+          tabs: const [
           GButton(icon: Icons.home, text: 'Shop'),
           GButton(icon: Icons.shopping_bag_outlined, text: 'Cart'),
           GButton(icon: Icons.person, text: 'User')
