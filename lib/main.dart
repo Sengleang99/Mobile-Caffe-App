@@ -1,6 +1,5 @@
 import 'package:cafe_app/getStart.dart';
 import 'package:cafe_app/models/coffee_shop.dart';
-import 'package:cafe_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

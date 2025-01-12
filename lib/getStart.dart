@@ -1,6 +1,4 @@
 import 'package:cafe_app/authentication/signin.dart';
-import 'package:cafe_app/authentication/signup.dart';
-import 'package:cafe_app/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 class GetStartScreen extends StatefulWidget {

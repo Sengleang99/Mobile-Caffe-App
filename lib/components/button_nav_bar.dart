@@ -20,6 +20,7 @@ class ButtonNavBar extends StatelessWidget{
           tabs: [
           GButton(icon: Icons.home, text: 'Shop'),
           GButton(icon: Icons.shopping_bag_outlined, text: 'Cart'),
+          GButton(icon: Icons.person, text: 'User')
       ]),
     );
   }
